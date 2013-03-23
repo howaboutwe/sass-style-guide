@@ -10,11 +10,13 @@ You can generate a PDF or an HTML copy of this guide using
 * [A Primer from the Sass Way](#a-primer-from-the-sass-way)
 * [Cleanup Rules](#cleanup-rules)
 * [Classes](#classes)
+* [Variables](#variables)
 * [Nesting](#nesting)
 * [Compass](#compass)
 * [Includes](#includes)
 * [Extends](#extends)
 * [Mixins](#mixins)
+* [Partials](#partials)
 
 ## A Primer from the Sass Way
 
@@ -28,7 +30,21 @@ You can generate a PDF or an HTML copy of this guide using
 
 ## Classes
 
-* CamelCase everything.  Not **snake_cased_name**.  Not **lowerCameCase**. Not **wHat_EVerThis_is**.  Just CamelCase.
+* snake_case everything!  Not **CamelCase**.  Not **lowerCameCase**. Not **wHat_EVerThis_is**.  Just snake_case.
+* Move away from using alignment and markup based classes.
+  * ex: ``.right{ float: right }``
+* Tend towards verbose class names
+* Better to style on class than element or id
+* 
+
+## Variables
+
+* Establish a base files for:
+  * _sizes.scss with base variables for grid units & font sizes
+  * _colors.scss with the colors from your styleguide.
+* ONLY use the established variables from _sizes.scss for padding, margins, layouts, font sizes, colors, etc.
+  * If you need a new color, you probably don't.
+  * If you ACTUALLY need a new color, update the base _colors.scss first and use the variable from there.
 
 ## Nesting
 
@@ -47,8 +63,17 @@ You can generate a PDF or an HTML copy of this guide using
 ## Extends
 
 * Never extend something that is already using an @extend
+* If using extend on selection deep on page or more than 4 or 5 times on the site, create a mixin
 * TBD
 
 ## Mixins
 
+* Always use the mixins if they exist
+* Never put an @extend in a mixin
+* If use mixin and then often have to override something, consider adding a variable to a mixin.
 * TBD
+
+## Partials
+
+* Paritals should be contained in a div with a class that's the name of the partial
+  * ex: ``_payment_items.haml`` should have ``.payment_items`` on line #1
