@@ -12,6 +12,7 @@ You can generate a PDF or an HTML copy of this guide using
 * [Classes](#classes)
 * [Variables](#variables)
 * [Nesting](#nesting)
+* [Functions](#functions)
 * [Compass](#compass)
 * [Includes](#includes)
 * [Extends](#extends)
@@ -50,9 +51,20 @@ You can generate a PDF or an HTML copy of this guide using
 * [Beware of inception style selectors.](http://thesassway.com/beginner/the-inception-rule)  
 * In short, don't mirror your nested selectors to mirror your markup's nesting.
 
+## Functions
+
+* TBD
+
 ## Compass
 
 * [Use it!](http://compass-style.org/)  When you do you'll want to keep the following things in mind:
+  * Use the [rhytym](http://compass-style.org/reference/compass/typography/vertical_rhythm/#mixin-rhythm) function to establish consistency for your:
+    * margin-top
+    * padding-top
+    * padding-bottom
+    * margin-bottom
+    * [Follow the setup instructions](http://compass-style.org/reference/compass/typography/vertical_rhythm/)
+  * Use the [border-radius](http://compass-style.org/reference/compass/css3/border_radius/#mixin-border-radius)
   * TDB
 
 ## Includes
