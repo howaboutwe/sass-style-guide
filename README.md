@@ -10,9 +10,9 @@ You can generate a PDF or an HTML copy of this guide using
 * [A Primer from the Sass Way](#a-primer-from-the-sass-way)
 * [Classes](#classes)
 * [Compass](#compass)
-* [Include](#include)
-* [Extend](#extend)
-* [Mixin](#mixin)
+* [Includes](#includes)
+* [Extends](#extends)
+* [Mixins](#mixins)
 
 ## A Primer from the Sass Way
 
@@ -36,4 +36,4 @@ You can generate a PDF or an HTML copy of this guide using
 * [Beware of inception style selectors.](http://thesassway.com/beginner/the-inception-rule)
 * Never extend something that is already using an @extend
 
-### Mixins
+## Mixins
