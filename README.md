@@ -31,11 +31,10 @@ You can generate a PDF or an HTML copy of this guide using
 ## Classes
 
 * snake_case everything!  Not **CamelCase**.  Not **lowerCameCase**. Not **wHat_EVerThis_is**.  Just snake_case.
-* Move away from using alignment and markup based classes.
+* Don't use alignment and markup based classes.
   * ex: ``.right{ float: right }``
 * Tend towards verbose class names
 * Better to style on class than element or id
-* 
 
 ## Variables
 
